@@ -15,7 +15,7 @@ body{
     align-items: center;
     background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
     display: flex;
-    font-family: 'Dosis' sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-display: swap;
     height: inherit;
     justify-content: center;
@@ -57,7 +57,7 @@ body{
     margin: 5% 0;
 }
 
-.calc.calc-button{
+.calc-button{
     backdrop-filter: blur(5.5px);
     -webkit-backdrop-filter: blur(5.5px);
     background: rgba(255, 255, 255, 0.75);
@@ -69,6 +69,7 @@ body{
     font-family: inherit;
     font-size: 24px;
     height: 65px;
+    cursor: pointer;
     
 }
 

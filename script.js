@@ -2,7 +2,7 @@ let runningTotal = 0;
 let buffer = "0";
 let previusOperator;
 
-const screen = document.querySelector('.screem');
+const screen = document.querySelector('.screen');
 
 function buttonClick(value){
     if(isNaN(value)){
@@ -36,8 +36,8 @@ function handleSymbol(symbol){
             }
             break;
         case '+':
-        case '-':
-        case 'x':
+        case '−':
+        case '×':
         case '÷':
             handleMath(symbol);
             break;
@@ -63,9 +63,9 @@ function handleMath(symbol){
 function flushOperation(intBuffer){
     if(previusOperator === '+'){
         runningTotal += intBuffer;
-    }else if(previusOperator === '-'){
+    }else if(previusOperator === '−'){
         runningTotal -= intBuffer;
-    }else if(previusOperator === 'x'){
+    }else if(previusOperator === '×'){
         runningTotal *= intBuffer;
     }else if(previusOperator === '÷'){
         runningTotal /= intBuffer;
